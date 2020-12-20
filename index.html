@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio sobris</title>
+</head>
+
+<style>
+    .isa {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-image: url('./pony.png');
+        background-size: cover;
+        height: 800px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .isa-cosas {
+        width: 20%;
+    }
+
+    .isa-cosas img {
+        width: 100%;
+    }
+
+    .isa-cosas img:hover {
+        transform: scale(1.2)
+    }
+
+    .isa h1 {
+        color: yellow;
+        background-color: violet;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .igna {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        background-image: url('./mar.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .igna h1 {
+        color: white;
+        background-color: aqua;
+        margin-bottom: 50px;
+    }
+
+    .igna-cosa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .igna img {
+        margin-top: 50px;
+        width: 400px;
+        max-width: 30vw;
+        height: 250px;
+        padding: 10px;
+    }
+
+    .igna h1 {
+        font-size: 3vw;
+    }
+
+    .igna img:hover {
+        animation: bounce 1s;
+    }
+
+    @keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-300px);
+    transform: translateY(-300px);
+  }
+}
+
+
+.valen {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background-image: url('./racing-fondo.jpeg');
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    text-align: center;
+}
+
+.valen-cosa {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.valen-cosa img {
+    width: 40vw;
+    height: 40vw;
+    animation: swing 2s infinite ease-in-out;
+}
+
+.valen h1 {
+    font-size: 4vw;
+    font-family: fantasy;
+    background-color: white;
+    color: lightskyblue;
+}
+
+.title {
+    text-align: center;
+    background-color: purple;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    padding: none;
+}
+
+.titulo-isa {
+    background-color: mediumpurple;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.titulo-igna {
+    background-color: greenyellow;
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.titulo-valen {
+    background-color: red;
+    color: lightgray;
+    font-size: 3vw;
+    text-align: center;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-30deg); }
+  20% {transform:scale(.95);}
+  50% { transform: rotate(30deg); }
+  80% {transform:scale(.95);}
+}
+
+
+@media (max-width: 768px) {
+        .isa-cosas {
+            width: 50%;
+        }
+        .isa-cosas img {
+            width: 100%;
+        }
+    }
+
+</style>
+
+
+<body>
+    
+    <h1 class="title">La página de los Williams</h1>
+
+    <h2 class="titulo-isa">Isa</h2>
+    <section class="isa">
+<div class="isa-cosas">
+        <h1>Caballos</h1>
+        <img src="./caballos.jpg" alt="">
+    </div>
+
+    <div class="isa-cosas">
+        <h1>Pókemon</h1>
+        <img src="./eevee.jpg" alt="">
+    </div>
+    </section>
+
+<h2 class="titulo-igna">Igna</h2>
+    <section class="igna">
+        <div class="igna-cosa">
+        <h1>Autos</h1>
+        <img src="./auto.jfif" alt="">
+    </div>
+    <div class="igna-cosa">
+        <h1>Karting</h1>
+        <img src="./karting.jpg" alt="">
+    </div>
+    <div class="igna-cosa">
+        <h1>Pokemon among us</h1>
+        <img src="./pokemon-amongus.jpg" alt="">
+    </div>
+    </section>
+<h2 class="titulo-valen">Valen</h2>
+    <section class="valen">
+        <div class="valen-cosa">
+        <h1>Fútbol</h1>
+        <a href="https://www.racingclub.com.ar/" target="_blank">
+        <img src="./futbol.jpg" alt="">
+        </a>
+    </div>
+    <div class="valen-cosa">
+        <h1>Pókemon</h1>
+        <a href="https://www.pokemon.com/el/" target="_blank">
+        <img src="./snorlax.jpg" alt="">
+    </a>
+    </div>
+    </section>
+
+
+</body>
+</html>
